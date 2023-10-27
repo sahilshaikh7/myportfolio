@@ -1,0 +1,71 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import '@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+#background-content{
+	background: #040404f0 !important;
+}
+
+$color_1: darkred;
+$font-family_1: 'Ubuntu', sans-serif;
+
+section {
+	padding: 50px 0;
+	.title {
+		position: relative;
+		text-align: center;
+		font-size: 40px;
+		font-weight: 500;
+		margin-bottom: 60px;
+		padding-bottom: 20px;
+		font-family: $font-family_1;
+		text-transform: uppercase;
+		color: #fff;
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: 0px;
+			left: 50%;
+			width: 180px;
+			height: 3px;
+			background: #fff;
+			transform: translateX(-50%);
+		}
+		&::after {
+			position: absolute;
+			bottom: -8px;
+			left: 50%;
+			font-size: 20px;
+			color: $color_1;
+			padding: 0 5px;
+			background: #131313fc;
+			transform: translateX(-50%);
+		}
+	}
+}
+a{
+	text-decoration: none;
+}

@@ -1,0 +1,251 @@
+$color_1: #fff;
+$color_2: #aaa;
+$color_3: #bbb;
+$color_4: #000;
+$color_5: #555;
+$font-family_1: 'Lato';
+$background-color_1: #000;
+$background-color_2: rgb(27,27,27);
+$background-color_3: #fff;
+$border-color_1: rgba(255,255,255,.6);
+
+/* Left contact page */
+/* Begin Right Contact Page */
+/* Location, Phone, Email Section */
+/* Social Media Icons */
+/* Begin Media Queries*/
+ion-content {
+	--background: #000;
+}
+.title {
+    &::after {
+        content: "Contact Me";
+        background: #000;
+    }
+}
+#contact {
+	width: 100%;
+	height: 100%;
+    padding-top: 100px;
+}
+.section-header {
+	text-align: center;
+	margin: 0 auto;
+	padding: 40px 0;
+	font: 300 60px 'Oswald', sans-serif;
+	color: $color_1;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+}
+.contact-wrapper {
+    background-color: #000;
+}
+.form-horizontal {
+	font-family: $font-family_1;
+	font-weight: 400;
+    padding: 20px;
+}
+.form-group{
+    margin-bottom: 10px;
+}
+.form-control {
+	background-color: transparent;
+	color: $color_1;
+	letter-spacing: 1px;
+    border: 0;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+textarea {
+	background-color: $background-color_1;
+	color: $color_1;
+	letter-spacing: 1px;
+}
+.send-button {
+	margin-top: 15px;
+	height: 34px;
+	width: 400px;
+	overflow: hidden;
+    background-color: darkred;
+    border-color: darkred;
+	transition: all .2s ease-in-out;
+}
+.alt-send-button {
+	width: 400px;
+	height: 34px;
+	transition: all .2s ease-in-out;
+	&:hover {
+		transform: translate3d(0px, -29px, 0px);
+	}
+}
+.send-text {
+	display: block;
+	margin-top: 10px;
+	font: 700 12px 'Lato', sans-serif;
+	letter-spacing: 2px;
+
+}
+
+.contact-list {
+	list-style-type: none;
+	margin-left: -30px;
+	padding-right: 20px;
+    span{
+        margin-left: 5px;
+    }
+}
+.list-item {
+	line-height: 4;
+	color: $color_2;
+}
+.contact-text {
+	font: 300 18px 'Lato', sans-serif;
+	letter-spacing: 1.9px;
+	color: $color_3;
+	a {
+		color: $color_3;
+		text-decoration: none;
+		transition-duration: 0.2s;
+		&:hover {
+			color: $color_1;
+			text-decoration: none;
+		}
+	}
+}
+.place {
+    font-size: 18px;
+}
+.phone {
+    font-size: 18px;
+}
+.gmail {
+    font-size: 18px;
+}
+.social-media-list {
+	position: relative;
+	font-size: 22px;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	li {
+		a {
+			color: $color_1;
+		}
+		position: relative;
+		display: inline-block;
+		height: 60px;
+		width: 60px;
+		margin: 10px 3px;
+		line-height: 60px;
+		border-radius: 50%;
+		color: $color_1;
+		background-color: $background-color_2;
+		cursor: pointer;
+		transition: all .2s ease-in-out;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 60px;
+			height: 60px;
+			line-height: 60px;
+			border-radius: 50%;
+			opacity: 0;
+			box-shadow: 0 0 0 1px #fff;
+			transition: all .2s ease-in-out;
+		}
+		&:hover {
+			background-color: $background-color_3;
+			&:after {
+				opacity: 1;
+				transform: scale(1.12);
+				transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+			}
+			a {
+				color: $color_4;
+			}
+		}
+	}
+}
+
+hr {
+	border-color: #fff;
+    background-color: #fff;
+    height: 1px;
+    opacity: 1;
+}
+@media screen and (max-width: 850px) {
+	.contact-wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+	.direct-contact-container {
+		margin: 0 auto;
+		margin-top: 60px;
+		max-width: 300px;
+	}
+	.form-horizontal {
+		margin: 0 auto;
+	}
+	.social-media-list {
+		li {
+			height: 60px;
+			width: 60px;
+			line-height: 60px;
+			&:after {
+				width: 60px;
+				height: 60px;
+				line-height: 60px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 569px) {
+	.direct-contact-container {
+		float: none;
+		margin: 0 auto;
+		margin-top: 60px;
+		max-width: 280px;
+	}
+	.form-wrapper {
+		float: none;
+		margin: 0 auto;
+	}
+	.form-control {
+		margin: 0 auto;
+	}
+	textarea {
+		margin: 0 auto;
+		width: 280px;
+	}
+	.name {
+		width: 280px;
+	}
+	.email {
+		width: 280px;
+	}
+	.social-media-list {
+		left: 0;
+		li {
+			height: 55px;
+			width: 55px;
+			line-height: 55px;
+			font-size: 2rem;
+			&:after {
+				width: 55px;
+				height: 55px;
+				line-height: 55px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 410px) {
+	.send-button {
+		width: 99%;
+	}
+}

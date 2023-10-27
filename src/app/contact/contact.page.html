@@ -1,0 +1,83 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <section id="contact">
+    <div class="container-full">
+    <h2 class="title">Contact Us</h2>
+        <div class="contact-wrapper">
+    <div class="row">
+
+        <div class="col-md-4">
+        
+        <!-- Left contact page --> 
+          
+          <form id="contact-form" class="form-horizontal" role="form">
+            
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+              </div>
+            </div>
+      
+            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+            
+            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+              <div class="alt-send-button">
+                <ion-icon name="send-outline"></ion-icon><span class="send-text">SEND</span>
+              </div>
+            
+            </button>
+            
+          </form>
+         </div> 
+        <!-- Left contact page --> 
+        <div class="col-md-4">
+          
+            <div class="direct-contact-container">
+      
+              <ul class="contact-list">
+                <li class="list-item"><ion-icon class="place" name="location-outline"></ion-icon><span class="contact-text place">5, Bhagat Singh Marag Dewas (MP)</span></li>
+                
+                <li class="list-item"><ion-icon class="place" name="call-outline"></ion-icon><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">91+ 8319337021</a></span></li>
+                
+                <li class="list-item"><ion-icon class="place" name="mail-outline"></ion-icon><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">sahilshaikh3010@gmail.com</a></span></li>
+                
+              </ul>
+      
+              <hr>
+              <ul class="social-media-list">
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <ion-icon name="logo-github"></ion-icon></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <ion-icon name="logo-linkedin"></ion-icon></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <ion-icon name="logo-twitter"></ion-icon></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <ion-icon name="logo-instagram"></ion-icon></a>
+                </li>       
+              </ul>
+              <hr>
+      
+      
+            </div>
+            
+        </div>
+        <div class="col-md-4">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=indore%20mp&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 400px; height: 460px;"></iframe><style>.mapouter{position:relative;height:460px;width:400px}.gmap_canvas{overflow:hidden;height:460px;width:400px}.gmap_canvas iframe{position:relative;z-index:2}.gmap_canvas a{top:0;z-index:0}</style><a href="https://www.eireportingonline.com">ei reporting</a></div></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>  
+    
+    
+</ion-content>
